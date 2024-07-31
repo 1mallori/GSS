@@ -35,6 +35,7 @@ we want cappun~OWNGUN
 ##Results
 
 <!--Divide this section into two sub-sections:  One for your descriptive  results and one for your inferential results.!-->
+
 ### Descriptive Results
 
 #### Graphical Descriptive Results
@@ -62,6 +63,7 @@ colPerc(table1)
 table1 <- xtabs(~OWNGUN + CAPPUN, data=GSSdata)
 colPerc(table1)
 ```
+
 This shows that people who own a gun are 75% in favor then the 57% who oppose.
 
 <!--Numerical results go here. Use the numerical results to describe the patterns if any that exist in the data as focused toward the research question!-->
@@ -79,6 +81,7 @@ chisqtestGC(table1)
 ```{r}
 fisher.test(table1)
 ```
+
 The P value for chi-squared test was p=0.02022. This means we reject the null hypothesis, and conclude that the opinion on capitol punishment (CAPPUN) is not independent of gun ownership(OWNGUN) because it is less then .05.
 
 The p-value for the fisher exact test was p=0.01651 and we reject the null hypothesis as with the chi-square test. The odds ratio was 2.3 times more likley to favor CAPPUN punishment then those who dont own.
